@@ -1,0 +1,19 @@
+{
+  "name": "button",
+  "type": "registry:ui",
+  "registryDependencies": [],
+  "dependencies": [],
+  "devDependencies": [],
+  "tailwind": {},
+  "cssVars": {
+    "light": {},
+    "dark": {}
+  },
+  "files": [
+    {
+      "path": "button.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\nimport React, { ComponentProps } from \"react\";\n\ninterface ButtonProps extends ComponentProps<\"button\"> {\n  label: string;\n}\n\nconst Button = ({ label, className, ...props }: ButtonProps) => {\n  return (\n    <button\n      className={cn(\"px-4 py-2 border rounded hover:opacity-95\", className)}\n      {...props}\n    >\n      {label}\n    </button>\n  );\n};\n\nexport default Button;\n",
+      "type": "registry:ui"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "berlix",
+  "homepage": "https//:rechesoares.com",
+  "items": [
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "A button",
+      "dependencies": [],
+      "devDependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "src/components/core/accordion.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": ["ui", "berlix"]
+    }
+  ]
+}
