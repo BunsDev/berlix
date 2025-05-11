@@ -21,6 +21,7 @@ export interface CssVars {
 }
 
 export interface RegistryItemSchema {
+  $schema: string;
   name: string;
   title: string;
   description: string;

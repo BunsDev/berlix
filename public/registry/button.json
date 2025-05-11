@@ -1,13 +1,16 @@
 {
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "button",
+  "title": "Button",
+  "description": "A simple button component",
+  "author": "Reche Soares",
   "type": "registry:ui",
-  "registryDependencies": [],
   "dependencies": [],
   "devDependencies": [],
-  "tailwind": {},
+  "registryDependencies": [],
   "cssVars": {
-    "light": {},
-    "dark": {}
+    "dark": {},
+    "light": {}
   },
   "files": [
     {
