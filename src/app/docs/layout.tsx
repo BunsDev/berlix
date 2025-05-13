@@ -9,8 +9,8 @@ export default function DocsLayout({ children }: { children: ReactNode }) {
       <Header />
       <div className="mx-auto max-w-[1536px] text-white flex flex-1">
         <Sidebar />
-        <main className="flex-1">{children}</main>
-        <aside className="w-[300px] h-[calc(100dvh-65px)] sticky top-[65px]">
+        <main className="flex-1 py-6">{children}</main>
+        <aside className="w-[300px] h-[calc(100dvh-57px)] sticky top-[57px]">
           <ScrollArea className="w-full h-full">aside</ScrollArea>
         </aside>
       </div>

@@ -10,9 +10,9 @@ const Sidebar = () => {
   const pathName = usePathname();
 
   return (
-    <aside className="w-[230px] h-[calc(100dvh-65px)] sticky top-[65px] border-r border-zinc-200 dark:border-zinc-800">
+    <aside className="w-[230px] h-[calc(100dvh-57px)] sticky top-[57px] border-r border-zinc-200 dark:border-zinc-800">
       <ScrollArea className="h-full w-full">
-        <div className="py-8 px-4">
+        <div className="py-6 px-4">
           <ul className="space-y-6">
             {navigation.map((nav, index) => (
               <li key={`${nav.label}-${index}`}>
