@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Header from "@/components/site/header";
 import Sidebar from "@/components/site/sidebar";
+import { ScrollArea } from "@/components/site/scroll-area";
 
 export default function DocsLayout({ children }: { children: ReactNode }) {
   return (
@@ -9,7 +10,9 @@ export default function DocsLayout({ children }: { children: ReactNode }) {
       <div className="mx-auto max-w-[1536px] text-white flex flex-1">
         <Sidebar />
         <main className="flex-1">{children}</main>
-        <div className="w-[300px] h-full border">aside</div>
+        <aside className="w-[300px] h-[calc(100dvh-65px)] sticky top-[65px]">
+          <ScrollArea className="w-full h-full">aside</ScrollArea>
+        </aside>
       </div>
     </div>
   );
