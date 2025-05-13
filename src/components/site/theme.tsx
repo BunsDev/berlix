@@ -9,7 +9,7 @@ export const ThemeSwitcher = () => {
   };
   return (
     <button
-      className="border-red-500 bg-red-300 p-2 text-white"
+      className="p-1 text-black border border-black dark:border-white dark:text-white"
       onClick={handleClick}
     >
       Theme: {theme}
