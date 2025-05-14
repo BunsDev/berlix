@@ -6,3 +6,24 @@
 * {
   box-sizing: border-box;
 }
+
+@layer utilities {
+  html {
+    --scrollbar-color: #00000032;
+    -webkit-tap-highlight-color: transparent;
+    scrollbar-gutter: stable;
+    scrollbar-color: var(--scrollbar-color) transparent;
+    scrollbar-width: thin;
+  }
+
+  html.dark {
+    --scrollbar-color: #ffffff32;
+  }
+
+  .thin-scroll {
+    -webkit-tap-highlight-color: transparent;
+    scrollbar-gutter: stable;
+    scrollbar-color: #ffffff32 transparent;
+    scrollbar-width: thin;
+  }
+}

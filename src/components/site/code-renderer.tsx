@@ -13,11 +13,17 @@ export const CodeRenderer = async ({
   const html = await codeToHtml(code, {
     lang,
     theme: "github-dark-default",
+    colorReplacements: {
+      "#0d1117": "#0a0a0a",
+    },
   });
 
   return (
-    <div className="font-medium text-sm">
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+    <div className="font-medium text-sm bg-zinc-950">
+      <div
+        style={{ padding: "16px", paddingRight: "20px" }}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </div>
   );
 };
