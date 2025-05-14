@@ -1,0 +1,29 @@
+"use client";
+import { cn } from "@/lib/utils";
+
+type ComponentPreviewProps = {
+  component: React.ReactElement;
+  hasReTrigger?: boolean;
+  className?: string;
+};
+
+export function ComponentRenderer({
+  component,
+  className,
+}: ComponentPreviewProps) {
+  return (
+    <div
+      className={cn(
+        "group flex min-h-[350px] w-full items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-800",
+        className
+      )}
+    >
+      <div className="absolute top-3 right-4">
+        <div className="flex items-center gap-3 opacity-0 transition-opacity group-hover:opacity-100">
+          hello
+        </div>
+      </div>
+      {component}
+    </div>
+  );
+}

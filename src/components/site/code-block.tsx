@@ -23,7 +23,7 @@ export const CodeBlock = ({
       <CodeCopy code={fileContent} />
       <div
         className={cn(
-          "not-prose relative max-h-[400px] thin-scroll overflow-auto  w-full rounded-lg text-sm border border-zinc-200 dark:border-zinc-800 bg-zinc-950"
+          "not-prose relative max-h-[400px] thin-scroll overflow-auto  w-full rounded-lg text-sm bg-zinc-950"
         )}
       >
         <CodeRenderer code={fileContent} lang={lang} />
