@@ -1,0 +1,64 @@
+import { CodeBlock } from "@/components/site/code-block";
+import { ComponentRenderer } from "@/components/site/component-renderer";
+import { Cli } from "@/components/site/cli";
+import {
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  TabsContent,
+} from "@/components/site/tabs.tsx";
+
+import TextScrambleBasic from "./text-scramble-basic.tsx";
+import TextScrambleCustomChars from "./text-scramble-custom-chars.tsx";
+
+# Text Scramble
+
+Animates text by cycling through random characters, progressively revealing the original text to create a dynamic scramble effect.
+
+## Examples
+
+### Text Scramble Basic
+
+<Tabs defaultValue="preview" className="">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview">
+    <ComponentRenderer component={<TextScrambleBasic />} />
+  </TabsContent>
+  <TabsContent value="code">
+    <CodeBlock filePath="src/app/docs/text-scramble/text-scramble-basic.tsx" />
+  </TabsContent>
+</Tabs>
+
+### Text Scramble with Custom CharacterSet
+
+<Tabs defaultValue="preview" className="">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview">
+    <ComponentRenderer component={<TextScrambleCustomChars />} />
+  </TabsContent>
+  <TabsContent value="code">
+    <CodeBlock filePath="src/app/docs/text-scramble/text-scramble-custom-chars.tsx" />
+  </TabsContent>
+</Tabs>
+
+## Installation
+
+<Tabs defaultValue="cli" className="">
+  <TabsList>
+    <TabsTrigger value="cli">CLI</TabsTrigger>
+    <TabsTrigger value="manual">Manual</TabsTrigger>
+  </TabsList>
+  <TabsContent value="cli">
+    <Cli command={`npx shadcn@latest add "https://berlix.vercel.app/registry/text-scramble.json"`} />
+  </TabsContent>
+
+  <TabsContent value="manual">
+    <CodeBlock filePath="src/components/core/text-scramble.tsx" />
+  </TabsContent>
+</Tabs>

@@ -10,13 +10,13 @@ type NavigationItem = {
 export const navigation: NavigationItem[] = [
   {
     label: "Get Started",
-    children: [
-      { label: "Introduction", href: "/docs" },
-      { label: "Installation", href: "/docs/installation" },
-    ],
+    children: [{ label: "Introduction", href: "/docs" }],
   },
   {
     label: "Core Components",
-    children: [{ label: "Button", href: "/docs/button" }],
+    children: [
+      { label: "Button", href: "/docs/button" },
+      { label: "Text Scramble", href: "/docs/text-scramble" },
+    ],
   },
 ];

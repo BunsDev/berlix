@@ -1,0 +1,48 @@
+import { CodeBlock } from "@/components/site/code-block";
+import { ComponentRenderer } from "@/components/site/component-renderer";
+import { Cli } from "@/components/site/cli";
+import {
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  TabsContent,
+} from "@/components/site/tabs.tsx";
+
+import { ButtonBasic } from "./button-basic";
+
+# Button
+
+A simple re-usable Button component.
+
+## Examples
+
+### Button Basic
+
+<Tabs defaultValue="preview" className="">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview">
+    <ComponentRenderer component={<ButtonBasic />} />
+  </TabsContent>
+  <TabsContent value="code">
+    <CodeBlock filePath="src/app/docs/button/button-basic.tsx" />
+  </TabsContent>
+</Tabs>
+
+## Installation
+
+<Tabs defaultValue="cli" className="">
+  <TabsList>
+    <TabsTrigger value="cli">CLI</TabsTrigger>
+    <TabsTrigger value="manual">Manual</TabsTrigger>
+  </TabsList>
+  <TabsContent value="cli">
+    <Cli command={`npx shadcn@latest add "https://berlix.vercel.app/registry/button.json"`} />
+  </TabsContent>
+
+  <TabsContent value="manual">
+    <CodeBlock filePath="src/components/core/button.tsx" />
+  </TabsContent>
+</Tabs>

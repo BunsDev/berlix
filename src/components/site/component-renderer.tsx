@@ -14,7 +14,7 @@ export function ComponentRenderer({
   return (
     <div
       className={cn(
-        "group flex min-h-[350px] w-full items-center justify-center rounded-lg",
+        "group flex min-h-[200px] w-full items-center justify-center rounded-lg p-4",
         className
       )}
     >
