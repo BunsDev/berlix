@@ -25,7 +25,7 @@ Animates text by cycling through random characters, progressively revealing the 
     <TabsTrigger value="code">Code</TabsTrigger>
   </TabsList>
   <TabsContent value="preview">
-    <ComponentRenderer component={<TextScrambleBasic />} />
+    <ComponentRenderer reTrigger={true} component={<TextScrambleBasic />} />
   </TabsContent>
   <TabsContent value="code">
     <CodeBlock filePath="src/app/docs/text-scramble/text-scramble-basic.tsx" />
@@ -40,7 +40,10 @@ Animates text by cycling through random characters, progressively revealing the 
     <TabsTrigger value="code">Code</TabsTrigger>
   </TabsList>
   <TabsContent value="preview">
-    <ComponentRenderer component={<TextScrambleCustomChars />} />
+    <ComponentRenderer
+      reTrigger={true}
+      component={<TextScrambleCustomChars />}
+    />
   </TabsContent>
   <TabsContent value="code">
     <CodeBlock filePath="src/app/docs/text-scramble/text-scramble-custom-chars.tsx" />
