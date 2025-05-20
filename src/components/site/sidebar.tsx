@@ -16,7 +16,7 @@ const Sidebar = () => {
           <ul className="space-y-6">
             {navigation.map((nav, index) => (
               <li key={`${nav.label}-${index}`}>
-                <div className="text-zinc-800 dark:text-white font-medium text-sm px-2 py-2">
+                <div className="text-zinc-900 dark:text-zinc-50 font-medium text-sm px-2 py-2">
                   {nav.label}
                 </div>
                 <ul className="space-y-1">
@@ -28,7 +28,7 @@ const Sidebar = () => {
                         <Link
                           href={child.href}
                           className={cn(
-                            "block text-zinc-700 dark:text-zinc-200 font-normal text-sm px-2 py-1 rounded-md hover:bg-gray-100 dark:hover:bg-zinc-700",
+                            "block text-zinc-600 dark:text-zinc-400 font-normal text-sm px-2 py-1 rounded-md hover:bg-gray-100 dark:hover:bg-zinc-700",
                             isActive &&
                               "bg-gray-100 dark:bg-zinc-700 text-zinc-800 dark:text-white"
                           )}
