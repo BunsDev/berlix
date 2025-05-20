@@ -1,4 +1,4 @@
-import TextRipple from "@/components/core/text-ripple";
+import { TextRipple } from "@/components/core/text-ripple";
 
 const TextRippleSpread = () => {
   return (

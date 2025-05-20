@@ -10,7 +10,7 @@ interface TextRippleProps {
   falloff?: number;
 }
 
-const TextRipple = ({
+export const TextRipple = ({
   children,
   className,
   maxScale = 2,
@@ -41,5 +41,3 @@ const TextRipple = ({
     </div>
   );
 };
-
-export default TextRipple;
