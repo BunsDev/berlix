@@ -23,4 +23,8 @@ export const navigation: NavigationItem[] = [
       { label: "Text Ripple", href: "/docs/text-ripple" },
     ],
   },
+  {
+    label: "Navigation",
+    children: [{ label: "Menu Verticle", href: "/docs/menu-verticle" }],
+  },
 ];
