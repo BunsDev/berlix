@@ -10,7 +10,7 @@ type MenuItem = {
   href: string;
 };
 
-interface MenuVerticleProps {
+interface MenuVerticalProps {
   menuItems: MenuItem[];
   color?: string;
   skew?: number;
@@ -18,11 +18,11 @@ interface MenuVerticleProps {
 
 const MotionLink = motion.create(Link);
 
-export const MenuVerticle = ({
+export const MenuVertical = ({
   menuItems = [],
   color = "#ff6900",
   skew = 0,
-}: MenuVerticleProps) => {
+}: MenuVerticalProps) => {
   return (
     <div className="flex w-fit flex-col gap-4 px-10">
       {menuItems.map((item, index) => (

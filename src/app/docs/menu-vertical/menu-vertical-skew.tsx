@@ -1,8 +1,8 @@
-import { MenuVerticle } from "@/components/core/menu-verticle";
+import { MenuVertical } from "@/components/core/menu-vertical";
 
-const MenuVerticleSkew = () => {
+const MenuVerticalSkew = () => {
   return (
-    <MenuVerticle
+    <MenuVertical
       color="#00c951"
       skew={-20}
       menuItems={[
@@ -23,4 +23,4 @@ const MenuVerticleSkew = () => {
   );
 };
 
-export default MenuVerticleSkew;
+export default MenuVerticalSkew;

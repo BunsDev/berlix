@@ -1,8 +1,8 @@
-import { MenuVerticle } from "@/components/core/menu-verticle";
+import { MenuVertical } from "@/components/core/menu-vertical";
 
-const MenuVerticleBasic = () => {
+const MenuVerticalBasic = () => {
   return (
-    <MenuVerticle
+    <MenuVertical
       menuItems={[
         {
           label: "Home",
@@ -29,4 +29,4 @@ const MenuVerticleBasic = () => {
   );
 };
 
-export default MenuVerticleBasic;
+export default MenuVerticalBasic;

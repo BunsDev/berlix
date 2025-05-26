@@ -8,16 +8,16 @@ import {
   TabsContent,
 } from "@/components/site/tabs.tsx";
 
-import MenuVerticleBasic from "./menu-verticle-basic";
-import MenuVerticleSkew from "./menu-verticle-skew";
+import MenuVerticalBasic from "./menu-vertical-basic";
+import MenuVerticalSkew from "./menu-vertical-skew";
 
-# Menu Verticle
+# Menu Vertical
 
 An animated vertical menu component that reveals a sliding arrow icon and animated text with optional skew
 
 ## Examples
 
-### Menu Verticle Basic
+### Menu Vertical Basic
 
 Basic ussage with the default styles
 
@@ -27,10 +27,10 @@ Basic ussage with the default styles
     <TabsTrigger value="code">Code</TabsTrigger>
   </TabsList>
   <TabsContent value="preview">
-    <ComponentRenderer component={<MenuVerticleBasic />} />
+    <ComponentRenderer component={<MenuVerticalBasic />} />
   </TabsContent>
   <TabsContent value="code">
-    <CodeBlock filePath="src/app/docs/menu-verticle/menu-verticle-basic.tsx" />
+    <CodeBlock filePath="src/app/docs/menu-vertical/menu-vertical-basic.tsx" />
   </TabsContent>
 </Tabs>
 
@@ -44,10 +44,10 @@ Uses a custom hover color and skew value for a more dynamic effect
     <TabsTrigger value="code">Code</TabsTrigger>
   </TabsList>
   <TabsContent value="preview">
-    <ComponentRenderer component={<MenuVerticleSkew />} />
+    <ComponentRenderer component={<MenuVerticalSkew />} />
   </TabsContent>
   <TabsContent value="code">
-    <CodeBlock filePath="src/app/docs/menu-verticle/menu-verticle-skew.tsx" />
+    <CodeBlock filePath="src/app/docs/menu-vertical/menu-vertical-skew.tsx" />
   </TabsContent>
 </Tabs>
 
@@ -59,10 +59,10 @@ Uses a custom hover color and skew value for a more dynamic effect
     <TabsTrigger value="manual">Manual</TabsTrigger>
   </TabsList>
   <TabsContent value="cli">
-    <Cli command={`npx shadcn@latest add "https://berlix.vercel.app/registry/menu-verticle.json"`} />
+    <Cli command={`npx shadcn@latest add "https://berlix.vercel.app/registry/menu-vertical.json"`} />
   </TabsContent>
 
   <TabsContent value="manual">
-    <CodeBlock filePath="src/components/core/menu-verticle.tsx" />
+    <CodeBlock filePath="src/components/core/menu-vertical.tsx" />
   </TabsContent>
 </Tabs>
