@@ -1,0 +1,68 @@
+import { CodeBlock } from "@/components/site/code-block";
+import { ComponentRenderer } from "@/components/site/component-renderer";
+import { Cli } from "@/components/site/cli";
+import {
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  TabsContent,
+} from "@/components/site/tabs.tsx";
+
+import FlipCardBasic from "./flip-card-basic";
+import FlipCardVertical from "./flip-card-vertical";
+
+# Flip Card
+
+A perspective-based card that subtly tilts and elevates on hover. Customize tilt range, depth, and motion for interactive visual feedback.
+
+## Examples
+
+### Flip Card Basic
+
+Basic ussage using the default values.
+
+<Tabs defaultValue="preview" className="">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview">
+    <ComponentRenderer component={<FlipCardBasic />} />
+  </TabsContent>
+  <TabsContent value="code">
+    <CodeBlock filePath="src/app/docs/flip-card/flip-card-basic.tsx" />
+  </TabsContent>
+</Tabs>
+
+### Flip Card Custom
+
+Example using vertical flip direction and reverse rotation
+
+<Tabs defaultValue="preview" className="">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview">
+    <ComponentRenderer component={<FlipCardVertical />} />
+  </TabsContent>
+  <TabsContent value="code">
+    <CodeBlock filePath="src/app/docs/flip-card/flip-card-vertical.tsx" />
+  </TabsContent>
+</Tabs>
+
+## Installation
+
+<Tabs defaultValue="cli" className="">
+  <TabsList>
+    <TabsTrigger value="cli">CLI</TabsTrigger>
+    <TabsTrigger value="manual">Manual</TabsTrigger>
+  </TabsList>
+  <TabsContent value="cli">
+    <Cli command={`npx shadcn@latest add "https://berlix.vercel.app/registry/flip-card.json"`} />
+  </TabsContent>
+
+  <TabsContent value="manual">
+    <CodeBlock filePath="src/components/core/flip-card.tsx" />
+  </TabsContent>
+</Tabs>

@@ -29,6 +29,9 @@ export const navigation: NavigationItem[] = [
   },
   {
     label: "Cards",
-    children: [{ label: "Tilt Card", href: "/docs/tilt-card" }],
+    children: [
+      { label: "Flip Card", href: "/docs/flip-card" },
+      { label: "Tilt Card", href: "/docs/tilt-card" },
+    ],
   },
 ];
