@@ -27,4 +27,8 @@ export const navigation: NavigationItem[] = [
     label: "Navigation",
     children: [{ label: "Menu Verticle", href: "/docs/menu-verticle" }],
   },
+  {
+    label: "Cards",
+    children: [{ label: "Tilt Card", href: "/docs/tilt-card" }],
+  },
 ];
