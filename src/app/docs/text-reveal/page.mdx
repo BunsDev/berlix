@@ -1,0 +1,68 @@
+import { CodeBlock } from "@/components/site/code-block";
+import { ComponentRenderer } from "@/components/site/component-renderer";
+import { Cli } from "@/components/site/cli";
+import {
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  TabsContent,
+} from "@/components/site/tabs.tsx";
+
+import TextRevealLetters from "./text-reveal-letters";
+import TextRevealWords from "./text-reveal-words";
+
+# Text Reveal
+
+A text animation component that reveals words or letters with blur, offset, and staggered motion effects.
+
+## Examples
+
+### Title Reveal
+
+Title animation revealing each letter with blur and vertical motion.
+
+<Tabs defaultValue="preview" className="">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview">
+    <ComponentRenderer reTrigger component={<TextRevealLetters />} />
+  </TabsContent>
+  <TabsContent value="code">
+    <CodeBlock filePath="src/app/docs/text-reveal/text-reveal-letters.tsx" />
+  </TabsContent>
+</Tabs>
+
+### Text Reveal with Custom Props
+
+Reveals each word with custom blur, timing, and reveal direction.
+
+<Tabs defaultValue="preview" className="">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview">
+    <ComponentRenderer reTrigger component={<TextRevealWords />} />
+  </TabsContent>
+  <TabsContent value="code">
+    <CodeBlock filePath="src/app/docs/text-reveal/text-reveal-words.tsx" />
+  </TabsContent>
+</Tabs>
+
+## Installation
+
+<Tabs defaultValue="cli" className="">
+  <TabsList>
+    <TabsTrigger value="cli">CLI</TabsTrigger>
+    <TabsTrigger value="manual">Manual</TabsTrigger>
+  </TabsList>
+  <TabsContent value="cli">
+    <Cli command={`npx shadcn@latest add "https://berlix.vercel.app/registry/text-reveal.json"`} />
+  </TabsContent>
+
+  <TabsContent value="manual">
+    <CodeBlock filePath="src/components/core/text-reveal.tsx" />
+  </TabsContent>
+</Tabs>

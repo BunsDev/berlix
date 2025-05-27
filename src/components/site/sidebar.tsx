@@ -13,7 +13,7 @@ const Sidebar = () => {
     <aside className="w-[230px] h-[calc(100dvh-57px)] sticky top-[57px] border-r border-zinc-200 dark:border-zinc-800">
       <ScrollArea className="h-full w-full">
         <div className="py-6 px-4">
-          <ul className="space-y-6">
+          <ul className="space-y-2">
             {navigation.map((nav, index) => (
               <li key={`${nav.label}-${index}`}>
                 <div className="text-zinc-900 dark:text-zinc-50 font-medium text-sm px-2 py-2">
