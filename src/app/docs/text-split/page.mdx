@@ -1,0 +1,64 @@
+import { CodeBlock } from "@/components/site/code-block";
+import { ComponentRenderer } from "@/components/site/component-renderer";
+import { Cli } from "@/components/site/cli";
+import {
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  TabsContent,
+} from "@/components/site/tabs.tsx";
+
+import TextSplitPreview from "./text-split-preview";
+import TextSplitFalloff from "./text-split-falloff";
+
+# Text Split
+
+Split text animation that shifts top and bottom halves on hover with customizable offset and falloff.
+
+## Examples
+
+### Text Split Preview
+
+<Tabs defaultValue="preview" className="">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview">
+    <ComponentRenderer component={<TextSplitPreview />} />
+  </TabsContent>
+  <TabsContent value="code">
+    <CodeBlock filePath="src/app/docs/text-split/text-split-preview.tsx" />
+  </TabsContent>
+</Tabs>
+
+### Text Split with gradual Falloff
+
+<Tabs defaultValue="preview" className="">
+  <TabsList>
+    <TabsTrigger value="preview">Preview</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="preview">
+    <ComponentRenderer component={<TextSplitFalloff />} />
+  </TabsContent>
+  <TabsContent value="code">
+    <CodeBlock filePath="src/app/docs/text-split/text-split-falloff.tsx" />
+  </TabsContent>
+</Tabs>
+
+## Installation
+
+<Tabs defaultValue="cli" className="">
+  <TabsList>
+    <TabsTrigger value="cli">CLI</TabsTrigger>
+    <TabsTrigger value="manual">Manual</TabsTrigger>
+  </TabsList>
+  <TabsContent value="cli">
+    <Cli command={`npx shadcn@latest add "https://berlix.vercel.app/registry/text-split.json"`} />
+  </TabsContent>
+
+  <TabsContent value="manual">
+    <CodeBlock filePath="src/components/core/text-split.tsx" />
+  </TabsContent>
+</Tabs>

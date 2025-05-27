@@ -19,9 +19,10 @@ export const navigation: NavigationItem[] = [
   {
     label: "Text Effects",
     children: [
-      { label: "Text Scramble", href: "/docs/text-scramble" },
       { label: "Text Reveal", href: "/docs/text-reveal" },
       { label: "Text Ripple", href: "/docs/text-ripple" },
+      { label: "Text Scramble", href: "/docs/text-scramble" },
+      { label: "Text Split", href: "/docs/text-split" },
     ],
   },
   {
