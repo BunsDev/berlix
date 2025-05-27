@@ -25,7 +25,10 @@ export const navigation: NavigationItem[] = [
   },
   {
     label: "Navigation",
-    children: [{ label: "Menu Vertical", href: "/docs/menu-vertical" }],
+    children: [
+      { label: "Menu Fluid", href: "/docs/menu-fluid" },
+      { label: "Menu Vertical", href: "/docs/menu-vertical" },
+    ],
   },
   {
     label: "Cards",
