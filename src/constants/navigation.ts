@@ -40,4 +40,8 @@ export const navigation: NavigationItem[] = [
       { label: "Tilt Card", href: "/docs/tilt-card" },
     ],
   },
+  {
+    label: "Backgrounds",
+    children: [{ label: "Gradient Bars", href: "/docs/gradient-bars" }],
+  },
 ];
