@@ -19,6 +19,7 @@ export const navigation: NavigationItem[] = [
   {
     label: "Text Effects",
     children: [
+      { label: "Text Circle", href: "/docs/text-circle" },
       { label: "Text Reveal", href: "/docs/text-reveal" },
       { label: "Text Ripple", href: "/docs/text-ripple" },
       { label: "Text Scramble", href: "/docs/text-scramble" },
