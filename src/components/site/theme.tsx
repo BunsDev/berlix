@@ -14,9 +14,9 @@ export const ThemeSwitcher = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="flex items-center rounded-md border p-2 text-sm transition-colors border-zinc-700 text-zinc-700 dark:border-zinc-300 dark:text-zinc-300"
+      className="flex items-center rounded-md p-2 text-sm transition-colors text-zinc-950 dark:text-zinc-50 cursor-pointer"
     >
-      {isDark ? <Sun size={18} /> : <Moon size={18} />}
+      {isDark ? <Sun size={16} /> : <Moon size={16} />}
     </button>
   );
 };
