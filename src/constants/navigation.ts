@@ -17,6 +17,7 @@ export const navigation: NavigationItem[] = [
     children: [
       { label: "Button", href: "/docs/button" },
       { label: "Checkbox", href: "/docs/checkbox" },
+      { label: "Input", href: "/docs/input" },
     ],
   },
   {
