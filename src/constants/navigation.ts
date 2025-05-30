@@ -14,7 +14,10 @@ export const navigation: NavigationItem[] = [
   },
   {
     label: "Core Components",
-    children: [{ label: "Button", href: "/docs/button" }],
+    children: [
+      { label: "Button", href: "/docs/button" },
+      { label: "Checkbox", href: "/docs/checkbox" },
+    ],
   },
   {
     label: "Text Effects",
