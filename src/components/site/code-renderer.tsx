@@ -19,7 +19,7 @@ export const CodeRenderer = async ({
   });
 
   return (
-    <div className="font-medium text-sm bg-zinc-950">
+    <div className="font-normal text-sm bg-zinc-950">
       <div
         style={{ padding: "16px", paddingRight: "20px" }}
         dangerouslySetInnerHTML={{ __html: html }}
