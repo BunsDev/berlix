@@ -43,7 +43,7 @@ const TabsTrigger = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger> & {
     classNameIndicator?: string;
   }
->(({ className, children, classNameIndicator, ...props }) => {
+>(({ className, children, classNameIndicator, ...props }, ref) => {
   const triggerRef = React.useRef<HTMLButtonElement>(null);
   const [isActive, setIsActive] = React.useState(false);
   const tabsId = React.useContext(TabsContext);

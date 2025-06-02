@@ -7,16 +7,15 @@ import {
   TabsTrigger,
   TabsContent,
 } from "@/components/site/tabs.tsx";
+import { PropsTable } from "@/components/site/props-table";
 
 import TextCirclePreview from "./text-circle-preview";
 
-# Text Reveal
+# Text Circle
 
-A circular text animation component
+A component that displays text in a circular layout with continuous rotation.
 
-## Examples
-
-### Preview
+## Preview
 
 <Tabs defaultValue="preview" className="">
   <TabsList>
@@ -46,3 +45,28 @@ A circular text animation component
     <CodeBlock filePath="src/components/core/text-circle.tsx" />
   </TabsContent>
 </Tabs>
+
+## Component Props
+
+<PropsTable
+  props={[
+    {
+      name: "text",
+      type: "string",
+      required: true,
+      description: "The text to be rendered in the circle.",
+    },
+    {
+      name: "duration",
+      type: "number",
+      default: 20,
+      description: "Time in seconds it takes for one complete rotation.",
+    },
+    {
+      name: "className",
+      type: "string",
+      description:
+        "Optional Tailwind or custom class names for styling the component.",
+    },
+  ]}
+/>

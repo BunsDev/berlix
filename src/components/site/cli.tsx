@@ -25,7 +25,7 @@ export const Cli = ({ command }: CliProps) => {
   return (
     <div className="w-full rounded-lg bg-zinc-950 relative overflow-hidden">
       {/* PM Selector */}
-      <div className="flex items-center justify-between px-4 py-2 bg-zinc-100 dark:bg-zinc-700">
+      <div className="flex items-center justify-between px-4 py-2 bg-zinc-100 dark:bg-zinc-800">
         <div className="flex items-center gap-4">
           {(Object.keys(PM_COMMANDS) as PackageManager[]).map((name) => (
             <button

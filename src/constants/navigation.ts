@@ -13,14 +13,6 @@ export const navigation: NavigationItem[] = [
     children: [{ label: "Introduction", href: "/docs" }],
   },
   {
-    label: "Core Components",
-    children: [
-      { label: "Button", href: "/docs/button" },
-      { label: "Checkbox", href: "/docs/checkbox" },
-      { label: "Input", href: "/docs/input" },
-    ],
-  },
-  {
     label: "Text Effects",
     children: [
       { label: "Text Circle", href: "/docs/text-circle" },
@@ -28,6 +20,13 @@ export const navigation: NavigationItem[] = [
       { label: "Text Ripple", href: "/docs/text-ripple" },
       { label: "Text Scramble", href: "/docs/text-scramble" },
       { label: "Text Split", href: "/docs/text-split" },
+    ],
+  },
+  {
+    label: "Forms",
+    children: [
+      { label: "Checkbox", href: "/docs/checkbox" },
+      { label: "Input", href: "/docs/input" },
     ],
   },
   {
