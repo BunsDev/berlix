@@ -6,7 +6,7 @@ import { XIcon } from "@/assets/icons/x";
 
 const Header = () => {
   return (
-    <div className="w-full sticky top-0 z-20 bg-white dark:bg-zinc-950 border-b border-gray-200 dark:border-zinc-800">
+    <div className="w-full sticky top-0 z-20 bg-zinc-50 dark:bg-zinc-950 border-b border-gray-200 dark:border-zinc-800">
       <header className="mx-auto max-w-[1536px] h-14 px-6 flex items-center justify-between">
         <div className="flex items-center gap-12">
           <Link href="/">
@@ -15,9 +15,19 @@ const Header = () => {
             </span>
           </Link>
 
-          <nav className="flex items-center gap-6 text-sm font-normal text-zinc-800 dark:text-zinc-200">
-            <Link href="/docs">Docs</Link>
-            <Link href="/docs/button">Components</Link>
+          <nav className="flex items-center gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
+            <Link
+              className="hover:text-zinc-900 dark:hover:text-zinc-50"
+              href="/docs"
+            >
+              Docs
+            </Link>
+            <Link
+              className="hover:text-zinc-900 dark:hover:text-zinc-50"
+              href="/docs/button"
+            >
+              Components
+            </Link>
           </nav>
         </div>
         <nav className="flex items-center space-x-2">
