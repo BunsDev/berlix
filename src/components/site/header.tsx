@@ -32,7 +32,7 @@ const Header = () => {
         </div>
         <nav className="flex items-center space-x-2">
           <Link
-            href="https://twitter.com/rechesoares13"
+            href="https://x.com/rechesoares13"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex h-9 w-9 items-center justify-center"
