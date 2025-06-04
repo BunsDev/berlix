@@ -7,13 +7,14 @@ import {
   TabsTrigger,
   TabsContent,
 } from "@/components/site/tabs.tsx";
+import { PropsTable } from "@/components/site/props-table.tsx";
 
 import FlipCardBasic from "./flip-card-basic";
 import FlipCardVertical from "./flip-card-vertical";
 
 # Flip Card
 
-A perspective-based card that subtly tilts and elevates on hover. Customize tilt range, depth, and motion for interactive visual feedback.
+A 3D animated flip card component that flips on hover, customizable by direction, rotation style, and transition duration.
 
 ## Examples
 
@@ -66,3 +67,52 @@ Example using vertical flip direction and reverse rotation
     <CodeBlock filePath="src/components/core/flip-card.tsx" />
   </TabsContent>
 </Tabs>
+
+## Component Props
+
+<PropsTable
+  props={[
+    {
+      name: "front",
+      type: "ReactNode",
+      required: true,
+      description: "The content to be displayed on the front side of the card.",
+    },
+    {
+      name: "back",
+      type: "ReactNode",
+      required: true,
+      description: "The content to be displayed on the back side of the card.",
+    },
+    {
+      name: "duration",
+      type: "number",
+      default: 0.3,
+      description:
+        "Duration of the flip animation in seconds.",
+    },
+    {
+      name: "flipDirection",
+      type: `'horizontal' | 'vertical'`,
+      default: `'horizontal'`,
+      description: "Direction of the flip.",
+    },
+    {
+      name: "flipRotation",
+      type: `'forward' | 'reverse'`,
+      default: `'forward'`,
+      description: "Flip rotation direction.",
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Custom class name for the outer card container.",
+    },
+    {
+      name: "panelClassName",
+      type: "string",
+      description: "Custom class name for both front and back panels.",
+    },
+
+]}
+/>

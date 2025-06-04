@@ -7,12 +7,13 @@ import {
   TabsTrigger,
   TabsContent,
 } from "@/components/site/tabs.tsx";
+import { PropsTable } from "@/components/site/props-table.tsx";
 
 import GradientBarsPreview from "./gradient-bars-preview";
 
 # Gradient Bars
 
-Gradient Bars Background Component
+Animated background with vertical gradient bars that pulse in a wave-like motion.
 
 ## Preview
 
@@ -44,3 +45,23 @@ Gradient Bars Background Component
     <CodeBlock filePath="src/components/core/gradient-bars.tsx" />
   </TabsContent>
 </Tabs>
+
+## Component Props
+
+<PropsTable
+  props={[
+    {
+      name: "bars",
+      type: "number",
+      default: 20,
+      description: "The number of vertical bars to render in the animation.",
+    },
+    {
+      name: "colors",
+      type: "string[]",
+      default: `['#8f0feb', 'transparent']`,
+      description:
+        "An array of color strings for gradient background for each bar.",
+    },
+  ]}
+/>

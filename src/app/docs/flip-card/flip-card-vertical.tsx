@@ -1,5 +1,4 @@
 import { FlipCard } from "@/components/core/flip-card";
-import React from "react";
 
 const FlipCardVertical = () => {
   return (

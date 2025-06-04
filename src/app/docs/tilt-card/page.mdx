@@ -7,13 +7,14 @@ import {
   TabsTrigger,
   TabsContent,
 } from "@/components/site/tabs.tsx";
+import { PropsTable } from "@/components/site/props-table.tsx";
 
 import TiltCardBasic from "./tilt-card-basic";
 import TiltCardCTA from "./tilt-card-cta";
 
 # Tilt Card
 
-A perspective-based card that subtly tilts and elevates on hover. Customize tilt range, depth, and motion for interactive visual feedback.
+A 3D interactive card component that responds to mouse movement with smooth tilt and elevation effects.
 
 ## Examples
 
@@ -66,3 +67,33 @@ Uses custom tilt range and depth values.
     <CodeBlock filePath="src/components/core/tilt-card.tsx" />
   </TabsContent>
 </Tabs>
+
+## Component Props
+
+<PropsTable
+  props={[
+    {
+      name: "children",
+      type: "ReactNode",
+      required: true,
+      description: "Content inside the tilt card.",
+    },
+    {
+      name: "range",
+      type: "number",
+      default: "32",
+      description: "Controls the tilt range.",
+    },
+    {
+      name: "depth",
+      type: "number",
+      default: "80",
+      description: "Controls the z-elevation on hover.",
+    },
+    {
+      name: "containerClassName",
+      type: "string",
+      description: "Optional class for styling the card container.",
+    },
+  ]}
+/>
