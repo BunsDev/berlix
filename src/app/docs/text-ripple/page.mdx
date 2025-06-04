@@ -7,6 +7,7 @@ import {
   TabsTrigger,
   TabsContent,
 } from "@/components/site/tabs.tsx";
+import { PropsTable } from "@/components/site/props-table.tsx";
 
 import TextRippleBasic from "./text-ripple-basic";
 import TextRippleSpread from "./text-ripple-spread";
@@ -66,3 +67,33 @@ Increases the falloff value to spread the ripple effect farther
     <CodeBlock filePath="src/components/core/text-ripple.tsx" />
   </TabsContent>
 </Tabs>
+
+## Component Props
+
+<PropsTable
+  props={[
+    {
+      name: "children",
+      type: "string",
+      required: true,
+      description: "Text to be animated",
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Optional class names for styling the text.",
+    },
+    {
+      name: "maxScale",
+      type: "number",
+      default: 2,
+      description: "Max Y scale on hover.",
+    },
+    {
+      name: "falloff",
+      type: "number",
+      default: 0.3,
+      description: "Controls how fast the scale reduces for nearby letters.",
+    },
+  ]}
+/>
