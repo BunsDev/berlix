@@ -24,7 +24,7 @@ const Header = () => {
             </Link>
             <Link
               className="hover:text-zinc-900 dark:hover:text-zinc-50"
-              href="/docs/button"
+              href="/docs/text-circle"
             >
               Components
             </Link>

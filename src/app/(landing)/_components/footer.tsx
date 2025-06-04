@@ -3,8 +3,8 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="flex items-center justify-between py-4 text-sm font-medium text-zinc-500 dark:text-zinc-300">
-      <span>© 2025 Spectrum UI. All rights reserved.</span>
+    <div className="flex flex-col md:flex-row items-center justify-between py-4 text-xs md:text-sm font-medium text-zinc-500 dark:text-zinc-300">
+      <span>© 2025 Berlix UI. All rights reserved.</span>
       <span>
         built with 🔥 by{" "}
         <Link

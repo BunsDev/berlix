@@ -48,7 +48,8 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.7, ease: "easeInOut" }}
           className="mt-12 flex flex-col md:flex-row items-center justify-center gap-4 w-full"
         >
-          <motion.button
+          <motion.a
+            href="/docs"
             whileHover="hover"
             variants={{
               hover: {
@@ -61,12 +62,15 @@ export const Hero = () => {
             <motion.div variants={{ hover: { x: 5 } }}>
               <ArrowRight />
             </motion.div>
-          </motion.button>
+          </motion.a>
 
-          <motion.button className="w-full md:w-fit cursor-pointer flex items-center justify-center gap-2 h-12 px-8 py-3 rounded-full border-2 border-zinc-950 dark:text-zinc-50 font-medium dark:border-zinc-50 text-zinc-900">
+          <motion.a
+            href="https://github.com/reche13/berlix"
+            className="w-full md:w-fit cursor-pointer flex items-center justify-center gap-2 h-12 px-8 py-3 rounded-full border-2 border-zinc-950 dark:text-zinc-50 font-medium dark:border-zinc-50 text-zinc-900"
+          >
             <GitHubIcon className="size-4 fill-zinc-950 dark:fill-zinc-50" />
             Star on GitHub
-          </motion.button>
+          </motion.a>
         </motion.div>
 
         <motion.div
