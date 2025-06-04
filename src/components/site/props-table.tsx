@@ -28,7 +28,9 @@ export const PropsTable = ({
           >
             <td className="py-3 px-4 font-mono">{prop.name}</td>
             <td className="py-3 px-4 font-mono">{prop.type}</td>
-            <td className="py-3 px-4 font-mono">{prop.default ?? "-"}</td>
+            <td className="py-3 px-4 font-mono max-w-[150px] break-words">
+              {prop.default ?? "-"}
+            </td>
             <td className="py-3 px-4 font-mono">
               {prop.required ? "Yes" : "No"}
             </td>

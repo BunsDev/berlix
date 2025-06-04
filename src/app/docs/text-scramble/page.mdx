@@ -7,6 +7,7 @@ import {
   TabsTrigger,
   TabsContent,
 } from "@/components/site/tabs.tsx";
+import { PropsTable } from "@/components/site/props-table.tsx";
 
 import TextScrambleBasic from "./text-scramble-basic.tsx";
 import TextScrambleCustomChars from "./text-scramble-custom-chars.tsx";
@@ -69,3 +70,33 @@ Using custom charset with slower animation speed.
     <CodeBlock filePath="src/components/core/text-scramble.tsx" />
   </TabsContent>
 </Tabs>
+
+## Component Props
+
+<PropsTable
+  props={[
+    {
+      name: "children",
+      type: "string",
+      required: true,
+      description: "Text to animate with scrambling effect",
+    },
+    {
+      name: "speed",
+      type: "number",
+      default: 50,
+      description: "Interval in ms between scramble steps",
+    },
+    {
+      name: "characterSet",
+      type: "string",
+      default: `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789`,
+      description: "Characters used for scrambling",
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Optional styling classes",
+    },
+  ]}
+/>
