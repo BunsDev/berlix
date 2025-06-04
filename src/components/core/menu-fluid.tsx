@@ -33,15 +33,16 @@ export const MenuFluid = ({
         <Link
           onMouseEnter={() => setHovered(index)}
           onMouseLeave={() => setHovered(null)}
-          className="py-4 px-8 relative text-zinc-900 dark:text-zinc-50 hover:text-zinc-50 dark:hover:text-zinc-900 transition-colors delay-100"
+          className="py-4 px-8 relative text-zinc-900 dark:text-zinc-50"
           key={`${item.label}-${index}`}
           href={item.href}
         >
           {hovered === index && (
             <motion.div
               layoutId="fluid"
+              transition={{ duration: 0.2, ease: "linear" }}
               className={cn(
-                "absolute inset-0 rounded-full bg-zinc-950 dark:bg-zinc-50",
+                "absolute inset-0 rounded-full bg-zinc-100 dark:bg-zinc-700",
                 indicatorClassName
               )}
             />
