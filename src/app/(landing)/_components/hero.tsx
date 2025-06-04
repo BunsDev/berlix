@@ -13,24 +13,41 @@ export const Hero = () => {
   return (
     <div className="mt-20 flex items-center justify-between gap-20">
       <div className="flex-1 flex flex-col items-center text-center">
-        <h1 className="font-bold flex flex-col text-5xl text-zinc-900 dark:text-zinc-50 capitalize tracking-tight leading-[1.3]">
-          <span className="inline-block">
+        <motion.h1
+          initial={{ y: 20, opacity: 0, filter: "blur(10px)" }}
+          animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          className="font-bold flex flex-col text-5xl capitalize tracking-tight leading-[1.3]"
+        >
+          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-b dark:from-zinc-50 from-zinc-950 dark:via-white via-zinc-800 dark:to-zinc-950 to-zinc-600">
             Breathe{" "}
             <span className="bg-gradient-to-r from-orange-500 to-rose-600 bg-clip-text text-transparent">
               Motion
             </span>
           </span>
-          <span className="inline-block">
+          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-b dark:from-zinc-50 from-zinc-950 dark:via-white via-zinc-800 dark:to-zinc-950 to-zinc-600">
             into your{" "}
             <span className="bg-gradient-to-r from-fuchsia-500 via-violet-600 to-blue-600 bg-clip-text text-transparent">
               Components
             </span>
           </span>
-        </h1>
-        <p className="text-xl font-medium text-zinc-700 dark:text-zinc-300 mt-2 max-w-[32ch]">
+        </motion.h1>
+
+        <motion.p
+          initial={{ y: 20, opacity: 0, filter: "blur(10px)" }}
+          animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+          transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
+          className="text-xl font-medium text-zinc-600 dark:text-zinc-400 mt-4 max-w-[32ch]"
+        >
           Motion-first components for React, built with Tailwind CSS and Motion.
-        </p>
-        <div className="mt-12 flex items-center gap-4">
+        </motion.p>
+
+        <motion.div
+          initial={{ y: 20, opacity: 0, filter: "blur(10px)" }}
+          animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+          transition={{ duration: 0.8, delay: 0.7, ease: "easeInOut" }}
+          className="mt-12 flex items-center gap-4"
+        >
           <motion.button
             whileHover="hover"
             variants={{
@@ -49,9 +66,14 @@ export const Hero = () => {
             <GitHubIcon className="size-4 fill-zinc-950 dark:fill-zinc-50" />
             Star on GitHub
           </button>
-        </div>
+        </motion.div>
 
-        <div className="mt-12 flex flex-col gap-2">
+        <motion.div
+          initial={{ y: 20, opacity: 0, filter: "blur(10px)" }}
+          animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+          transition={{ duration: 0.8, delay: 1, ease: "easeInOut" }}
+          className="mt-12 flex flex-col gap-2"
+        >
           <span className="text-base font-medium text-zinc-500 dark:text-zinc-300">
             Built with
           </span>
@@ -63,7 +85,7 @@ export const Hero = () => {
             <MotionIcon className="fill-zinc-500 dark:fill-zinc-300 size-12" />
             <ShadcnIcon className="stroke-zinc-500 dark:stroke-zinc-300 size-8" />
           </div>
-        </div>
+        </motion.div>
       </div>
       {/* <div className="flex-1">TODO: image</div> */}
     </div>
