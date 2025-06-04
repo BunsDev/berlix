@@ -2,12 +2,12 @@ import React from "react";
 
 export const Feature = () => {
   return (
-    <div className="mt-20 flex items-center justify-between gap-20">
+    <div className="md:mt-20 flex items-center justify-between gap-20">
       <div className="flex-1 flex flex-col items-center text-center">
-        <h1 className="font-bold flex flex-col text-3xl text-zinc-900 dark:text-zinc-50 capitalize tracking-tight leading-[1.3]">
+        <h1 className="font-bold flex flex-col text-xl md:text-3xl text-zinc-900 dark:text-zinc-50 capitalize tracking-tight leading-[1.3]">
           Smooth animations, endlessly customizable.
         </h1>
-        <p className="text-xl font-medium text-zinc-700 dark:text-zinc-300 mt-2 max-w-[32ch]">
+        <p className="text-base md:text-xl font-medium text-zinc-600 dark:text-zinc-400 mt-2 max-w-[32ch]">
           Fine-tuned motion components you can tweak, extend, and make your
           own—with zero hassle.
         </p>
