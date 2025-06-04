@@ -7,6 +7,7 @@ import {
   TabsTrigger,
   TabsContent,
 } from "@/components/site/tabs.tsx";
+import { PropsTable } from "@/components/site/props-table.tsx";
 
 import MenuFluidPreview from "./menu-fluid-preview";
 
@@ -44,3 +45,30 @@ A tabular navigation with seamless fluid hover animation
     <CodeBlock filePath="src/components/core/menu-fluid.tsx" />
   </TabsContent>
 </Tabs>
+
+## Component Props
+
+<PropsTable
+  props={[
+    {
+      name: "menuItems",
+      type: "MenuItem[]",
+      required: true,
+      description:
+        "An array of menu items, each with a label (string) and href (string).",
+    },
+    {
+      name: "className",
+      type: "string",
+      required: false,
+      description: "Optional additional CSS classes to apply to the container.",
+    },
+    {
+      name: "indicatorClassName",
+      type: "string",
+      required: false,
+      description:
+        "Optional additional CSS classes to apply to the hovered background indicator.",
+    },
+  ]}
+/>
