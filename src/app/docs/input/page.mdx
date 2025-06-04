@@ -7,16 +7,15 @@ import {
   TabsTrigger,
   TabsContent,
 } from "@/components/site/tabs.tsx";
+import { PropsTable } from "@/components/site/props-table.tsx";
 
 import InputPreview from "./input-preview";
 
 # Input
 
-animated Input component
+A sleek, animated text input with a floating label that gracefully moves up on focus.
 
-## Examples
-
-### Preview
+## Preview
 
 <Tabs defaultValue="preview" className="">
   <TabsList>
@@ -46,3 +45,32 @@ animated Input component
     <CodeBlock filePath="src/components/core/input.tsx" />
   </TabsContent>
 </Tabs>
+
+## Component Props
+
+<PropsTable
+  props={[
+    {
+      name: "label",
+      type: "string",
+      required: true,
+      description: "Text label displayed with animated letters.",
+    },
+    {
+      name: "value",
+      type: "string",
+      required: true,
+      description: "Current value of the input (controlled).",
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Additional class names for the component.",
+    },
+    {
+      name: "...props",
+      type: "Standard HTML input attributes",
+      description: "Other standard input props like onChange, disabled etc.",
+    },
+  ]}
+/>
