@@ -7,6 +7,7 @@ import {
   TabsTrigger,
   TabsContent,
 } from "@/components/site/tabs.tsx";
+import { PropsTable } from "@/components/site/props-table.tsx";
 
 import MenuVerticalBasic from "./menu-vertical-basic";
 import MenuVerticalSkew from "./menu-vertical-skew";
@@ -66,3 +67,30 @@ Uses a custom hover color and skew value for a more dynamic effect
     <CodeBlock filePath="src/components/core/menu-vertical.tsx" />
   </TabsContent>
 </Tabs>
+
+## Component Props
+
+<PropsTable
+  props={[
+    {
+      name: "menuItems",
+      type: "MenuItem[]",
+      required: true,
+      description:
+        "An array of menu items, each with a label (string) and href (string).",
+    },
+    {
+      name: "color",
+      type: "string",
+      default: "#ff6900",
+      description: "Optional color used for the hover arrow and text.",
+    },
+    {
+      name: "skew",
+      type: "number",
+      required: false,
+      default: "0",
+      description: "Optional skew in degrees applied to the label on hover.",
+    },
+  ]}
+/>
