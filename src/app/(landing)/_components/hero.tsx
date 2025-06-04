@@ -11,13 +11,13 @@ import { TypeScriptIcon } from "@/assets/icons/typescript";
 
 export const Hero = () => {
   return (
-    <div className="mt-20 flex items-center justify-between gap-20">
+    <div className="items-center mt-40">
       <div className="flex-1 flex flex-col items-center text-center">
         <motion.h1
           initial={{ y: 20, opacity: 0, filter: "blur(10px)" }}
           animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="font-bold flex flex-col text-5xl capitalize tracking-tight leading-[1.3]"
+          className="font-bold flex flex-col text-3xl md:text-5xl capitalize tracking-tight leading-[1.3]"
         >
           <span className="inline-block text-transparent bg-clip-text bg-gradient-to-b dark:from-zinc-50 from-zinc-950 dark:via-white via-zinc-800 dark:to-zinc-950 to-zinc-600">
             Breathe{" "}
@@ -37,7 +37,7 @@ export const Hero = () => {
           initial={{ y: 20, opacity: 0, filter: "blur(10px)" }}
           animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
-          className="text-xl font-medium text-zinc-600 dark:text-zinc-400 mt-4 max-w-[32ch]"
+          className="text-base md:text-xl font-medium text-zinc-600 dark:text-zinc-400 mt-4 max-w-[32ch]"
         >
           Motion-first components for React, built with Tailwind CSS and Motion.
         </motion.p>
@@ -46,7 +46,7 @@ export const Hero = () => {
           initial={{ y: 20, opacity: 0, filter: "blur(10px)" }}
           animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.8, delay: 0.7, ease: "easeInOut" }}
-          className="mt-12 flex items-center gap-4"
+          className="mt-12 flex flex-col md:flex-row items-center justify-center gap-4 w-full"
         >
           <motion.button
             whileHover="hover"
@@ -55,17 +55,18 @@ export const Hero = () => {
                 boxShadow: "0px 12px 15px -12px rgba(234,88,12,1)",
               },
             }}
-            className="cursor-pointer flex items-center gap-2 px-8 h-12 py-3 rounded-full bg-zinc-950 text-zinc-50 font-medium dark:bg-zinc-50 dark:text-zinc-900"
+            className="w-full md:w-fit cursor-pointer flex items-center justify-center gap-2 px-8 h-12 py-3 rounded-full bg-zinc-950 text-zinc-50 font-medium dark:bg-zinc-50 dark:text-zinc-900"
           >
             <span>Get Started</span>
             <motion.div variants={{ hover: { x: 5 } }}>
               <ArrowRight />
             </motion.div>
           </motion.button>
-          <button className="cursor-pointer flex items-center gap-2 h-12 px-8 py-3 rounded-full border-2 border-zinc-950 dark:text-zinc-50 font-medium dark:border-zinc-50 text-zinc-900">
+
+          <motion.button className="w-full md:w-fit cursor-pointer flex items-center justify-center gap-2 h-12 px-8 py-3 rounded-full border-2 border-zinc-950 dark:text-zinc-50 font-medium dark:border-zinc-50 text-zinc-900">
             <GitHubIcon className="size-4 fill-zinc-950 dark:fill-zinc-50" />
             Star on GitHub
-          </button>
+          </motion.button>
         </motion.div>
 
         <motion.div

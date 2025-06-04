@@ -9,25 +9,25 @@ const page = () => {
   return (
     <main className="bg-zinc-50 dark:bg-zinc-950">
       <Header />
-      <div className="w-full bg-zinc-50 dark:bg-zinc-950">
+      <div className="w-full bg-zinc-50 dark:bg-zinc-950 px-4">
         <div className="flex flex-col min-h-screen relative mx-auto max-w-7xl">
           <Hero />
         </div>
       </div>
 
-      <div className="w-full bg-zinc-50 dark:bg-zinc-950">
+      <div className="w-full bg-zinc-50 dark:bg-zinc-950 px-4">
         <div className="flex flex-col min-h-screen relative mx-auto max-w-7xl">
           <Feature />
         </div>
       </div>
 
-      <div className="w-full bg-zinc-50 dark:bg-zinc-950">
+      <div className="w-full bg-zinc-50 dark:bg-zinc-950 px-4">
         <div className="relative py-32 mx-auto max-w-7xl">
           <CallToAction />
         </div>
       </div>
 
-      <div className="w-full bg-zinc-50 dark:bg-zinc-950">
+      <div className="w-full bg-zinc-50 dark:bg-zinc-950 px-4">
         <div className="relative mx-auto max-w-7xl">
           <Footer />
         </div>
