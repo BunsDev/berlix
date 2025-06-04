@@ -11,8 +11,8 @@ import { TypeScriptIcon } from "@/assets/icons/typescript";
 
 export const Hero = () => {
   return (
-    <div className="mt-20 flex justify-between gap-20">
-      <div className="flex-1">
+    <div className="mt-20 flex items-center justify-between gap-20">
+      <div className="flex-1 flex flex-col items-center text-center">
         <h1 className="font-bold flex flex-col text-5xl text-zinc-900 dark:text-zinc-50 capitalize tracking-tight leading-[1.3]">
           <span className="inline-block">
             Breathe{" "}
@@ -65,7 +65,7 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex-1">{/* TODO: image */}</div>
+      {/* <div className="flex-1">TODO: image</div> */}
     </div>
   );
 };
