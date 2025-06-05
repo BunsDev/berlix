@@ -3,7 +3,7 @@
 import { motion, useMotionValue, useSpring } from "motion/react";
 import { cn } from "@/lib/utils";
 
-interface Book3DProps {
+interface BookProps {
   content: React.ReactNode;
   cover: React.ReactNode;
   backOfCover?: React.ReactNode;
@@ -13,7 +13,7 @@ interface Book3DProps {
   className?: string;
 }
 
-export const BookCard = ({
+export const Book = ({
   content,
   cover,
   backOfCover,
@@ -21,7 +21,7 @@ export const BookCard = ({
   coverRotate = -100,
   className,
   color = "#e30012",
-}: Book3DProps) => {
+}: BookProps) => {
   const rotatePage = useMotionValue(0);
   const rotateSpring = useSpring(rotatePage, {
     stiffness: 100,
