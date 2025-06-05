@@ -11,11 +11,11 @@ const Header = () => {
         <div className="flex items-center gap-12">
           <Link href="/">
             <span className="font-semibold text-lg text-zinc-900 dark:text-zinc-100">
-              Berlix UI
+              Berlix&nbsp;UI
             </span>
           </Link>
 
-          <nav className="flex items-center gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
+          <nav className=" hidden md:flex items-center gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
             <Link
               className="hover:text-zinc-900 dark:hover:text-zinc-50"
               href="/docs"
