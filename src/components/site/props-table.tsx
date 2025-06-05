@@ -9,7 +9,7 @@ export const PropsTable = ({
     required?: boolean;
   }[];
 }) => (
-  <div className="rounded-lg border border-zinc-200 dark:border-zinc-700 not-prose overflow-hidden">
+  <div className="rounded-lg border border-zinc-200 dark:border-zinc-700 not-prose overflow-x-auto">
     <table className="w-full text-sm my-0">
       <thead className="bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-50 border-b border-zinc-200 dark:border-zinc-700">
         <tr className="divide-x divide-zinc-200 dark:divide-zinc-700">
@@ -26,15 +26,15 @@ export const PropsTable = ({
             key={prop.name}
             className="font-medium text-sm divide-x divide-zinc-200 dark:divide-zinc-600 text-zinc-500 dark:text-zinc-400"
           >
-            <td className="py-3 px-4 font-mono">{prop.name}</td>
-            <td className="py-3 px-4 font-mono">{prop.type}</td>
-            <td className="py-3 px-4 font-mono max-w-[150px] break-words">
+            <td className="py-2 md:py-3 px-4 font-mono">{prop.name}</td>
+            <td className="py-2 md:py-3 px-4 font-mono">{prop.type}</td>
+            <td className="py-2 md:py-3 px-4 font-mono max-w-[150px] break-words">
               {prop.default ?? "-"}
             </td>
-            <td className="py-3 px-4 font-mono">
+            <td className="py-2 md:py-3 px-4 font-mono">
               {prop.required ? "Yes" : "No"}
             </td>
-            <td className="py-3 px-4">{prop.description}</td>
+            <td className="py-2 md:py-3 px-4">{prop.description}</td>
           </tr>
         ))}
       </tbody>
