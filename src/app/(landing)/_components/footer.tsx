@@ -8,7 +8,7 @@ export const Footer = () => {
       <span>
         built with 🔥 by{" "}
         <Link
-          href="https://x.com/rechesoares13"
+          href="https://rechesoares.com"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:underline"
