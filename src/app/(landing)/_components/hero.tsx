@@ -17,16 +17,20 @@ export const Hero = () => {
           initial={{ y: 20, opacity: 0, filter: "blur(10px)" }}
           animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="font-bold flex flex-col text-3xl md:text-5xl capitalize tracking-tight leading-[1.3]"
+          className="font-bold flex flex-col text-5xl capitalize tracking-tight leading-[1.3]"
         >
-          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-b dark:from-zinc-50 from-zinc-950 dark:via-white via-zinc-800 dark:to-zinc-950 to-zinc-600">
-            Breathe{" "}
+          <span>
+            <span className="inline-block text-transparent bg-clip-text bg-gradient-to-b dark:from-zinc-50 from-zinc-950 dark:via-white via-zinc-800 dark:to-zinc-950 to-zinc-600">
+              Breathe
+            </span>{" "}
             <span className="bg-gradient-to-r from-orange-500 to-rose-600 bg-clip-text text-transparent">
               Motion
             </span>
           </span>
-          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-b dark:from-zinc-50 from-zinc-950 dark:via-white via-zinc-800 dark:to-zinc-950 to-zinc-600">
-            into your{" "}
+          <span>
+            <span className="inline-block text-transparent bg-clip-text bg-gradient-to-b dark:from-zinc-50 from-zinc-950 dark:via-white via-zinc-800 dark:to-zinc-950 to-zinc-600">
+              into your
+            </span>{" "}
             <span className="bg-gradient-to-r from-fuchsia-500 via-violet-600 to-blue-600 bg-clip-text text-transparent">
               Components
             </span>
