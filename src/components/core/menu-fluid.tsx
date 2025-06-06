@@ -33,7 +33,7 @@ export const MenuFluid = ({
         <Link
           onMouseEnter={() => setHovered(index)}
           onMouseLeave={() => setHovered(null)}
-          className="py-4 px-8 relative text-zinc-900 dark:text-zinc-50"
+          className="py-2 md:py-3 px-4 md:px-8 relative text-zinc-900 dark:text-zinc-50"
           key={`${item.label}-${index}`}
           href={item.href}
         >
@@ -47,9 +47,9 @@ export const MenuFluid = ({
               )}
             />
           )}
-          <motion.span className="font-semibold font-sm z-20 relative">
+          <span className="font-semibold text-sm z-20 relative">
             {item.label}
-          </motion.span>
+          </span>
         </Link>
       ))}
     </div>
