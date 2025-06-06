@@ -10,7 +10,7 @@ const page = () => {
     <main className="bg-zinc-50 dark:bg-zinc-950">
       <Header />
       <div className="w-full bg-zinc-50 dark:bg-zinc-950 px-4">
-        <div className="flex flex-col min-h-screen relative mx-auto max-w-7xl">
+        <div className="flex flex-col  relative mx-auto max-w-7xl">
           <Hero />
         </div>
       </div>

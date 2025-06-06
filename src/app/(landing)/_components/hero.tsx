@@ -11,7 +11,7 @@ import { TypeScriptIcon } from "@/assets/icons/typescript";
 
 export const Hero = () => {
   return (
-    <div className="items-center mt-40">
+    <div className="items-center my-40">
       <div className="flex-1 flex flex-col items-center text-center">
         <motion.h1
           initial={{ y: 20, opacity: 0, filter: "blur(10px)" }}
