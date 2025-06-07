@@ -4,8 +4,37 @@ import { ThemeProvider } from "next-themes";
 import { geistMono, geistSans } from "@/assets/fonts";
 
 export const metadata: Metadata = {
-  title: "Berlix UI",
-  description: "React Components based on TailwindCSS and Motion",
+  title: "Berlix UI – Animated React Components Library",
+  description:
+    "Berlix UI is an open-source, animation-first component library for React and Next.js. Built with Tailwind CSS and Framer Motion to help you create delightful, interactive UIs.",
+  openGraph: {
+    title: "Berlix UI – Animated React Components Library",
+    description:
+      "An open-source UI library crafted for sleek, animated interfaces. Berlix UI offers ready-to-use components built with Tailwind CSS and Framer Motion.",
+    url: "https://berlix.vercel.app",
+    siteName: "Berlix UI",
+    images: [
+      {
+        url: "https://berlix.vercel.app/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Berlix UI Components Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Berlix UI – Animated React Components Library",
+    description:
+      "Create stunning UIs effortlessly with Berlix UI – animated, composable components built with React, Tailwind CSS, and Framer Motion.",
+    images: ["https://berlix.vercel.app/og-image.png"],
+    creator: "@rechesoares13",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
