@@ -6,7 +6,7 @@ import { geistMono, geistSans } from "@/assets/fonts";
 export const metadata: Metadata = {
   title: "Berlix UI – Animated React Components Library",
   description:
-    "Berlix UI is an open-source, animation-first component library for React and Next.js. Built with Tailwind CSS and Framer Motion to help you create delightful, interactive UIs.",
+    "Berlix UI is an open-source, animation-first component library for React and Next.js. Built with Tailwind CSS and Framer Motion.",
   openGraph: {
     title: "Berlix UI – Animated React Components Library",
     description:
