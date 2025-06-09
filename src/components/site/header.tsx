@@ -8,6 +8,7 @@ import { XIcon } from "@/assets/icons/x";
 import { AnimatePresence, motion } from "motion/react";
 import { SidebarMobile } from "./sidebar-mobile";
 import { X } from "lucide-react";
+import { Logo } from "@/assets/icons/logo";
 
 const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -35,7 +36,8 @@ const Header = () => {
         className="fixed top-0 left-0 z-40 h-full w-4/5 bg-zinc-50 dark:bg-zinc-950 md:hidden"
       >
         <div className="w-full px-6 py-4 flex items-center justify-between border-b border-gray-200 dark:border-zinc-800">
-          <Link href="/">
+          <Link href="/" className="flex items-center gap-2">
+            <Logo className="size-6 fill-rose-500" />
             <span className="font-semibold text-lg text-zinc-900 dark:text-zinc-100">
               Berlix&nbsp;UI
             </span>
@@ -43,9 +45,9 @@ const Header = () => {
 
           <button
             onClick={() => setSidebarOpen(false)}
-            className="text-zinc-900 dark:text-zinc-100 size-4"
+            className="text-zinc-900 dark:text-zinc-100"
           >
-            <X />
+            <X className="size-5" />
           </button>
         </div>
         <SidebarMobile onClose={() => setSidebarOpen(false)} />
@@ -58,15 +60,16 @@ const Header = () => {
               {
                 <button
                   onClick={toggleSidebar}
-                  className="flex flex-col items-start gap-1.5 md:hidden"
+                  className="flex flex-col items-start gap-1 md:hidden"
                 >
-                  <span className="w-6 h-0.5 bg-zinc-900 dark:bg-zinc-100 rounded-full" />
-                  <span className="w-4 h-0.5 bg-zinc-900 dark:bg-zinc-100 rounded-full" />
                   <span className="w-5 h-0.5 bg-zinc-900 dark:bg-zinc-100 rounded-full" />
+                  <span className="w-3 h-0.5 bg-zinc-900 dark:bg-zinc-100 rounded-full" />
+                  <span className="w-4 h-0.5 bg-zinc-900 dark:bg-zinc-100 rounded-full" />
                 </button>
               }
 
-              <Link href="/">
+              <Link href="/" className="flex items-center gap-2">
+                <Logo className="size-6 fill-rose-500" />
                 <span className="font-semibold text-lg text-zinc-900 dark:text-zinc-100">
                   Berlix&nbsp;UI
                 </span>
