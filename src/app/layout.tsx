@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { geistMono, geistSans } from "@/assets/fonts";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Berlix UI – Animated React Components Library",
@@ -51,6 +52,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.className} ${geistMono.variable} antialiased min-h-screen`}
       >
+        <Analytics />
         <ThemeProvider attribute="class" defaultTheme="dark">
           {children}
         </ThemeProvider>
