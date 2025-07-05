@@ -15,7 +15,7 @@ export const CallToAction = () => {
 
         <div className="mt-16 w-full max-w-[750px] border-zinc-200 dark:border-zinc-800 rounded-lg border">
           <Cli
-            command={`add "https://berlix.vercel.app/registry/text-reveal.json"`}
+            command={`add "https://ui.rechesoares.com/registry/text-reveal.json"`}
           />
         </div>
       </div>
