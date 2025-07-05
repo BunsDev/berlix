@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://berlix.vercel.app/og-image.png" alt="Berlix UI banner" width="100%" />
+  <img src="https://ui.rechesoares.com/og-image.png" alt="Berlix UI banner" width="100%" />
 </p>
 
 <h1 align="center">Berlix UI</h1>
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://berlix.vercel.app"><strong>📘 Documentation</strong></a>
+  <a href="https://ui.rechesoares.com"><strong>📘 Documentation</strong></a>
 </p>
 
 ---
