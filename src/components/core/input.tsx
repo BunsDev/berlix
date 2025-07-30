@@ -2,8 +2,24 @@
 
 import { useState } from "react";
 import { motion } from "motion/react";
-import type { Variants } from "motion";
 import { cn } from "@/lib/utils";
+
+// Define custom types for motion animations
+type AnimationVariant = {
+  y?: number | string;
+  color?: string;
+  transition?: {
+    type?: "spring" | "tween" | "keyframes";
+    stiffness?: number;
+    damping?: number;
+    staggerChildren?: number;
+  };
+};
+
+type CustomVariants = {
+  initial: AnimationVariant;
+  animate: AnimationVariant;
+};
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
@@ -11,7 +27,7 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   className?: string;
 }
 
-const containerVariants: Variants = {
+const containerVariants: CustomVariants = {
   initial: {},
   animate: {
     transition: {
@@ -20,7 +36,7 @@ const containerVariants: Variants = {
   },
 };
 
-const letterVariants: Variants = {
+const letterVariants: CustomVariants = {
   initial: {
     y: 0,
     color: "inherit",

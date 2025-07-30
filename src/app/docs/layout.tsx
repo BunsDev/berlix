@@ -1,3 +1,4 @@
+"use client";
 import { ReactNode } from "react";
 import Header from "@/components/site/header";
 import Sidebar from "@/components/site/sidebar";

@@ -5,7 +5,6 @@ import * as TabsPrimitive from "@radix-ui/react-tabs";
 
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
-import React from "react";
 
 const Tabs = TabsPrimitive.Root;
 
@@ -48,7 +47,7 @@ const TabsTrigger = forwardRef<
   const triggerRef = useRef<HTMLButtonElement>(null);
   const [isActive, setIsActive] = useState(false);
   const tabsId = useContext(TabsContext);
-
+  console.log({ ref })
   useEffect(() => {
     const element = triggerRef.current;
     if (element) {
