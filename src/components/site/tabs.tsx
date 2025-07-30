@@ -1,20 +1,21 @@
 "use client";
 
-import * as React from "react";
+import { ComponentRef, ComponentPropsWithoutRef, forwardRef, createContext, useId, useState, useRef, useEffect, useContext } from "react";
 import * as TabsPrimitive from "@radix-ui/react-tabs";
 
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
+import React from "react";
 
 const Tabs = TabsPrimitive.Root;
 
-const TabsContext = React.createContext<string>("");
+const TabsContext = createContext<string>("");
 
-const TabsRoot = React.forwardRef<
-  React.ElementRef<typeof TabsPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof TabsPrimitive.Root>
+const TabsRoot = forwardRef<
+  ComponentRef<typeof TabsPrimitive.Root>,
+  ComponentPropsWithoutRef<typeof TabsPrimitive.Root>
 >(({ ...props }, ref) => {
-  const uniqueId = React.useId();
+  const uniqueId = useId();
   return (
     <TabsContext.Provider value={uniqueId}>
       <Tabs ref={ref} {...props} />
@@ -23,9 +24,9 @@ const TabsRoot = React.forwardRef<
 });
 TabsRoot.displayName = TabsPrimitive.Root.displayName;
 
-const TabsList = React.forwardRef<
-  React.ElementRef<typeof TabsPrimitive.List>,
-  React.ComponentPropsWithoutRef<typeof TabsPrimitive.List>
+const TabsList = forwardRef<
+  ComponentRef<typeof TabsPrimitive.List>,
+  ComponentPropsWithoutRef<typeof TabsPrimitive.List>
 >(({ className, ...props }, ref) => (
   <TabsPrimitive.List
     ref={ref}
@@ -38,17 +39,17 @@ const TabsList = React.forwardRef<
 ));
 TabsList.displayName = TabsPrimitive.List.displayName;
 
-const TabsTrigger = React.forwardRef<
-  React.ElementRef<typeof TabsPrimitive.Trigger>,
-  React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger> & {
+const TabsTrigger = forwardRef<
+  ComponentRef<typeof TabsPrimitive.Trigger>,
+  ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger> & {
     classNameIndicator?: string;
   }
 >(({ className, children, classNameIndicator, ...props }, ref) => {
-  const triggerRef = React.useRef<HTMLButtonElement>(null);
-  const [isActive, setIsActive] = React.useState(false);
-  const tabsId = React.useContext(TabsContext);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const [isActive, setIsActive] = useState(false);
+  const tabsId = useContext(TabsContext);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const element = triggerRef.current;
     if (element) {
       setIsActive(element.dataset.state === "active");
@@ -97,9 +98,9 @@ const TabsTrigger = React.forwardRef<
 });
 TabsTrigger.displayName = TabsPrimitive.Trigger.displayName;
 
-const TabsContent = React.forwardRef<
-  React.ElementRef<typeof TabsPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof TabsPrimitive.Content>
+const TabsContent = forwardRef<
+  ComponentRef<typeof TabsPrimitive.Content>,
+  ComponentPropsWithoutRef<typeof TabsPrimitive.Content>
 >(({ className, ...props }, ref) => (
   <TabsPrimitive.Content
     ref={ref}

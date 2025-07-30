@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "motion/react";
+import type { Variants } from "motion";
 import { cn } from "@/lib/utils";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
@@ -10,7 +11,7 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   className?: string;
 }
 
-const containerVariants = {
+const containerVariants: Variants = {
   initial: {},
   animate: {
     transition: {
@@ -19,16 +20,17 @@ const containerVariants = {
   },
 };
 
-const letterVariants = {
+const letterVariants: Variants = {
   initial: {
     y: 0,
     color: "inherit",
   },
   animate: {
-    y: "-120%",
+    y: "-120%", // Using string is allowed in motion v12
     color: "var(--color-zinc-500)",
     transition: {
-      type: "spring",
+      // Fix the type issue by using correct type names
+      type: "spring" as const,
       stiffness: 300,
       damping: 20,
     },
